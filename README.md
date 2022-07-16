@@ -3,7 +3,7 @@ The early diagnosis of BC can improve the prognosis and chance of survival signi
 as it can promote timely clinical treatment to patients. Further accurate classification of
 benign tumors can prevent patients undergoing unnecessary treatments.
 
-## About Data
+## About Dataset
 Features
 * diagnosis: The diagnosis of breast tissues (1 = malignant, 0 = benign) where malignant denotes that the disease is harmful
 * radius: distances from center to points on the perimeter
@@ -22,4 +22,7 @@ Mean of Radius -> radius_mean
 Standard Error -> radius_se
 
 Worst Radius   -> radius_worst
+
+## Sources
+This breast cancer dataset on [Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)was obtained from the [University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 
