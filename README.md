@@ -3,6 +3,20 @@ The early diagnosis of BC can improve the prognosis and chance of survival signi
 as it can promote timely clinical treatment to patients. Further accurate classification of
 benign tumors can prevent patients undergoing unnecessary treatments.
 
+## Setup Environment
+
+Install Packages
+```
+install.packages("tidyverse")
+install.packages("readxl")
+install.packages("caret")
+install.packages("boot")
+install.packages("forecast")
+install.packages("StepReg")
+install.packages("neuralnet")
+install.packages("NeuralNetTools")
+install.packages("nnet")
+```
 ## About Dataset
 Features
 * diagnosis: The diagnosis of breast tissues (1 = malignant, 0 = benign) where malignant denotes that the disease is harmful
