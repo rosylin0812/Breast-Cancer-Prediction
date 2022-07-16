@@ -1,6 +1,6 @@
 # load data
 
-breast.df <- read.csv(file.path(getwd(),"Breast Cancer Data.csv"))
+breast.df <- read.csv('https://raw.githubusercontent.com/rosylin0812/Breast-Cancer-Prediction/main/Breast%20Cancer%20Data.csv')
 
 breast.df <- breast.df[-1]
 
