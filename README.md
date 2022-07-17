@@ -19,12 +19,13 @@ install.packages("nnet")
 ```
 ## Machine Learning
 * Logistic Regression Model with Principal Components
-1. Used Principal Components Analysis to find and remove the overlap of information between predictors. Created small subset of predictors that contain most of the information Replaced origial predictors with the subset. 
-3. Applied Logistic Regression Model to the subset
-4. Used K-Fold Cross Validation to examine overfitting issue
+  Used Principal Components Analysis to find and remove the overlap of information between predictors. 
+  Created small subset of predictors that contain most of the information and replaced origial predictors with the subset. 
+  Applied Logistic Regression Model to the subset
+  Used K-Fold Cross Validation to examine overfitting issue
 * Logistic Regression Model with Origial Predictors
-1. Ran Stepwise Regression to drop predictors and get optimal models
-2. Trained Logistic Regression Model
+  Ran Stepwise Regression to drop predictors and get optimal models
+  Trained Logistic Regression Model
 *  k-nearest neighbors (KNN)
 *  Neural Network
 
@@ -71,8 +72,6 @@ concave.points_worst  66.5244    16.3767   4.062 4.86e-05 ***
 radius_worst           1.1373     0.2896   3.928 8.58e-05 ***
 radius_se             11.7350     3.1175   3.764 0.000167 ***
 texture_worst          0.3303     0.0959   3.445 0.000572 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 ## About Dataset
 Features
