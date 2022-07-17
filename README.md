@@ -31,6 +31,7 @@ In this project, the dataset was obtained from the University of Wisconsin Hospi
   * Trained Logistic Regression Model
 *  k-nearest neighbors (KNN)
 *  Neural Network
+*  Random Forest
 ### Summary
 :point_right: Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
 ```
