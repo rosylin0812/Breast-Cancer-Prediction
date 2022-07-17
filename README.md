@@ -31,7 +31,7 @@ In this project, the dataset was obtained from the University of Wisconsin Hospi
 *  k-nearest neighbors (KNN)
 *  Neural Network
 ### Summary
-:point_right:Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
+:point_right: Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
 ```
 Confusion Matrix and Statistics
           Reference
@@ -59,7 +59,8 @@ Prediction   1   0
     No Information Rate : 0.5833         
     P-Value [Acc > NIR] : <2e-16
 ```
-Mean of the three largest values in severity of concave portions of the contour, stardard error and mean of the three largest values of radius, and Mean of the three largest values in standard deviation of gray-scale values has significan impact on the diagnosis of breast mass. The higher value they are, the higher probability that the breast mass is malignant.   
+:point_right: Mean of the three largest values in severity of concave portions of the contour, stardard error and mean of the three largest values of radius, and Mean of the three largest values in standard deviation of gray-scale values has significan impact on the diagnosis of breast mass. 
+:point_right: The higher value they are, the higher probability that the breast mass is malignant.   
 
 ```
 Coefficients:
