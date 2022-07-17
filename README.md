@@ -14,6 +14,7 @@ install.packages("StepReg")
 install.packages("neuralnet")
 install.packages("NeuralNetTools")
 install.packages("nnet")
+install.packages("randomForest")
 ```
 ### Overview
 Breast cancer is one of the most common cancers among women worldwide and leading causes of cancer death in the United States. Breast tumors can be seen via X-ray or felt as lumps in breast area by self-examanation. When a suspicious lump is detected, the doctor will conduct a diagnosis to determine whether it is malignant (cancerous) or begnin(non-cancerous). 
