@@ -19,7 +19,6 @@ install.packages("nnet")
 Breast cancer is one of the most common cancers among women worldwide and leading causes of cancer death in the United States. Breast tumors can be seen via X-ray or felt as lumps in breast area by self-examanation. When a suspicious lump is detected, the doctor will conduct a diagnosis to determine whether it is malignant (cancerous) or begnin(non-cancerous). 
 
 In this project, the dataset was obtained from the University of Wisconsin Hospitals, Madison. Features (Predictors/ Variable) in the dataset are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of the cell nuclei present in the image. The goal of this project is to classify each breast mass into malignant or benign using machine learning, trying to find out what features significantly impact the result of target variable in the prediction. 
-
 ### Machine Learning
 * Logistic Regression Model with Principal Components
   Used Principal Components Analysis to find and remove the overlap of information between predictors. 
@@ -31,7 +30,6 @@ In this project, the dataset was obtained from the University of Wisconsin Hospi
   Trained Logistic Regression Model
 *  k-nearest neighbors (KNN)
 *  Neural Network
-
 ### Summary
 Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
 ```
@@ -96,7 +94,6 @@ Mean of Radius -> radius_mean
 Standard Error of Radius -> radius_se
 
 Worst Radius of Radius   -> radius_worst
-
 ### Sources
 This breast cancer dataset on [Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) was obtained from the [University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 
