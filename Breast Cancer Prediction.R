@@ -1,6 +1,6 @@
 # load data
 
-breast.df <- read.csv(file.path(getwd(),"Breast Cancer Data.csv"))
+breast.df <- read.csv('https://raw.githubusercontent.com/rosylin0812/Breast-Cancer-Prediction/main/Breast%20Cancer%20Data.csv')
 
 breast.df <- breast.df[-1]
 
@@ -136,7 +136,7 @@ library(neuralnet)
 library(NeuralNetTools)
 library(nnet)
 library(caret)
-
+install.packages("nnet")
 # run neural network
 nn <- neuralnet(diagnosis ~ ., 
                 data=train.df, hidden=c(2,3,4),learningrate=0.01,stepmax=1e6)# highest
@@ -150,3 +150,19 @@ nn.pred <- compute(nn, valid.df)
 nn.class <- ifelse(nn.pred$net.result > 0.5, 1, 0)
 #nn.class
 confusionMatrix(as.factor(nn.class), as.factor(valid.df$diagnosis))
+
+##############  Random Forest #################
+library(randomForest)
+rf <- randomForest(as.factor(diagnosis) ~ ., data = train.df, ntree = 500, 
+                   mtry = 4, nodesize = 5, importance = TRUE)  
+
+## variable importance plot
+varImpPlot(rf, type = 1)
+summary(rf)
+#votes: a matrix with one row for each input data point and one column for each class
+rf$votes
+
+## Prediction & Evaluation
+rf.pred <- predict(rf, valid.df)
+library(caret)
+confusionMatrix(as.factor(rf.pred), as.factor(valid.df$diagnosis))
