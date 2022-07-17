@@ -59,7 +59,7 @@ Prediction   1   0
     No Information Rate : 0.5833         
     P-Value [Acc > NIR] : <2e-16
 ```
-:point_right: Mean of the three largest values in severity of concave portions of the contour, stardard error and mean of the three largest values of radius, and Mean of the three largest values in standard deviation of gray-scale values has significan impact on the diagnosis of breast mass. 
+:point_right: Mean of the three largest values in severity of concave portions of the contour, stardard error and mean of the three largest values of radius, and Mean               of the three largest values in standard deviation of gray-scale values has significan impact on the diagnosis of breast mass. 
 :point_right: The higher value they are, the higher probability that the breast mass is malignant.   
 
 ```
