@@ -31,33 +31,29 @@ In this project, the dataset was obtained from the University of Wisconsin Hospi
 *  k-nearest neighbors (KNN)
 *  Neural Network
 ### Summary
-Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
+:point_right:Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
 ```
 Confusion Matrix and Statistics
-
           Reference
 Prediction   1   0
          1 208   1
-         0   4 356
-                                          
+         0   4 356                                  
                Accuracy : 0.9912          
                  95% CI : (0.9796, 0.9971)
     No Information Rate : 0.6274          
     P-Value [Acc > NIR] : <2e-16  
 ```
-I found that the following glm formula would provide highest accuracy among others
+:point_right: I found that the following glm formula would provide highest accuracy among others
 ```
 glm(formula = diagnosis ~ concave.points_worst + radius_worst + 
     radius_se + texture_worst, family = "binomial", data = train.df)
 ```
 ```
 Confusion Matrix and Statistics
-
           Reference
 Prediction   1   0
          1  90   3
-         0   5 130
-                                         
+         0   5 130                            
                Accuracy : 0.9649         
                  95% CI : (0.932, 0.9847)
     No Information Rate : 0.5833         
