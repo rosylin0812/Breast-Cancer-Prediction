@@ -1,14 +1,11 @@
 ## Breast Cancer Prediction
-### Overview
-Breast cancer is one of the most common cancers among women worldwide and leading causes of cancer death in the United States. Breast tumors can be seen via X-ray or felt as lumps in breast area by self-examanation. When a suspicious lump is detected, the doctor will conduct a diagnosis to determine whether it is malignant (cancerous) or begnin(non-cancerous). 
+### Setup & Installation
+Make sure you have the latest version of [R](https://www.r-project.org/) installed.
 
-In this project, the dataset was obtained from the University of Wisconsin Hospitals, Madison. Features (Predictors/ Variable) in the dataset are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of the cell nuclei present in the image. The goal of this project is to classify each breast mass into malignant or benign using machine learning, trying to find out what features significantly impact the result of target variable in the prediction. 
-### Setup Environment
-
+Recommend IED: [RStudio](https://www.rstudio.com/products/rstudio/download/)
 Install Packages
 ```
 install.packages("tidyverse")
-install.packages("readxl")
 install.packages("caret")
 install.packages("boot")
 install.packages("forecast")
@@ -17,6 +14,11 @@ install.packages("neuralnet")
 install.packages("NeuralNetTools")
 install.packages("nnet")
 ```
+### Overview
+Breast cancer is one of the most common cancers among women worldwide and leading causes of cancer death in the United States. Breast tumors can be seen via X-ray or felt as lumps in breast area by self-examanation. When a suspicious lump is detected, the doctor will conduct a diagnosis to determine whether it is malignant (cancerous) or begnin(non-cancerous). 
+
+In this project, the dataset was obtained from the University of Wisconsin Hospitals, Madison. Features (Predictors/ Variable) in the dataset are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of the cell nuclei present in the image. The goal of this project is to classify each breast mass into malignant or benign using machine learning, trying to find out what features significantly impact the result of target variable in the prediction. 
+
 ### Machine Learning
 * Logistic Regression Model with Principal Components
   Used Principal Components Analysis to find and remove the overlap of information between predictors. 
