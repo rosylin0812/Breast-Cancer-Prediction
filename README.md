@@ -1,9 +1,9 @@
-### Breast Cancer Prediction
-## Overview
+## Breast Cancer Prediction
+### Overview
 Breast cancer is one of the most common cancers among women worldwide and leading causes of cancer death in the United States. Breast tumors can be seen via X-ray or felt as lumps in breast area by self-examanation. When a suspicious lump is detected, the doctor will conduct a diagnosis to determine whether it is malignant (cancerous) or begnin(non-cancerous). 
 
 In this project, the dataset was obtained from the University of Wisconsin Hospitals, Madison. Features (Predictors/ Variable) in the dataset are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of the cell nuclei present in the image. The goal of this project is to classify each breast mass into malignant or benign using machine learning, trying to find out what features significantly impact the result of target variable in the prediction. 
-## Setup Environment
+### Setup Environment
 
 Install Packages
 ```
@@ -17,7 +17,7 @@ install.packages("neuralnet")
 install.packages("NeuralNetTools")
 install.packages("nnet")
 ```
-## Machine Learning
+### Machine Learning
 * Logistic Regression Model with Principal Components
   Used Principal Components Analysis to find and remove the overlap of information between predictors. 
   Created small subset of predictors that contain most of the information and replaced origial predictors with the subset. 
@@ -29,7 +29,7 @@ install.packages("nnet")
 *  k-nearest neighbors (KNN)
 *  Neural Network
 
-## Summary
+### Summary
 Logistic Regression Model with Principal Components gives the hiest accuracy of prediction among these four models.
 ```
 Confusion Matrix and Statistics
@@ -73,7 +73,7 @@ radius_worst           1.1373     0.2896   3.928 8.58e-05 ***
 radius_se             11.7350     3.1175   3.764 0.000167 ***
 texture_worst          0.3303     0.0959   3.445 0.000572 ***
 ```
-## About Dataset
+### About Dataset
 Features
 * diagnosis: The diagnosis of breast tissues (1 = malignant, 0 = benign) where malignant denotes that the disease is harmful
 * radius: distances from center to points on the perimeter
