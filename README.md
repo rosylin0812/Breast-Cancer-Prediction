@@ -86,6 +86,7 @@ Features
 * concavity: severity of concave portions of the contour
 * concave points: number of concave portions of the contour
 * fractal dimension: "coastline approximation" - 1
+
 The mean, standard error, and worst (mean of the three largest values) of these features were computed for each breast tissue image. 
 * Mean of Radius -> radius_mean
 * Standard Error of Radius -> radius_se
