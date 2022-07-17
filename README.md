@@ -21,13 +21,13 @@ Breast cancer is one of the most common cancers among women worldwide and leadin
 In this project, the dataset was obtained from the University of Wisconsin Hospitals, Madison. Features (Predictors/ Variable) in the dataset are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of the cell nuclei present in the image. The goal of this project is to classify each breast mass into malignant or benign using machine learning, trying to find out what features significantly impact the result of target variable in the prediction. 
 ### Machine Learning
 * Logistic Regression Model with Principal Components
-  Used Principal Components Analysis to find and remove the overlap of information between predictors. 
-  Created small subset of predictors that contain most of the information and replaced origial predictors with the subset. 
-  Applied Logistic Regression Model to the subset
-  Used K-Fold Cross Validation to examine overfitting issue
+  * Used Principal Components Analysis to find and remove the overlap of information between predictors. 
+  * Created small subset of predictors that contain most of the information and replaced origial predictors with the subset. 
+  * Applied Logistic Regression Model to the subset
+  * Used K-Fold Cross Validation to examine overfitting issue
 * Logistic Regression Model with Origial Predictors
-  Ran Stepwise Regression to drop predictors and get optimal models
-  Trained Logistic Regression Model
+  * Ran Stepwise Regression to drop predictors and get optimal models
+  * Trained Logistic Regression Model
 *  k-nearest neighbors (KNN)
 *  Neural Network
 ### Summary
