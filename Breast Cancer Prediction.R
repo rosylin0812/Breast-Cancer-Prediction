@@ -1,7 +1,6 @@
 # load data
-
 breast.df <- read.csv('https://raw.githubusercontent.com/rosylin0812/Breast-Cancer-Prediction/main/Breast%20Cancer%20Data.csv')
-
+# drop ID column
 breast.df <- breast.df[-1]
 
 library(tidyverse)
