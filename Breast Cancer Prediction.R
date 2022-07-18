@@ -114,9 +114,23 @@ reg.pred <- predict(reg, valid.df, type='response')
 reg.pred.class <- factor(ifelse(reg.pred > 0.6, 1, 0), levels=c('1', '0'))
 confusionMatrix(reg.pred.class, factor(valid.df$diagnosis, levels=c('1', '0')), positive='1')
 
+
 ##############  K-Neareast     #################
 library(class)
 library(caret)
+
+#Find optimal K (from 1 to 15)
+train.diagnosis <- as.factor(train.df$diagnosis)
+valid.diagnosis <- as.factor(valid.df$diagnosis)
+
+accuracy.df <- data.frame(k = seq(1, 15, 1), accuracy = 0)
+#View(accuracy.df)
+for(i in 1:15) {
+  knn.pred <- knn(train.df, valid.df, cl=train.diagnosis, k=i)
+  accuracy.df[i, 'accuracy'] <- confusionMatrix(knn.pred, valid.diagnosis)$overall[1] 
+}
+accuracy.df
+
 # run kNN with k=5
 nn5 <- knn(train.df, valid.df, cl=as.factor(train.df$diagnosis), k=5)
 # kNN performance
